@@ -77,8 +77,3 @@ fun countIceCream(): Int {
 fun highestPrice(): Double {
     throw NotImplementedError("TODO")
 }
-
-
-data class IceCream(
-    val type: String, val price: Double, val numberSold: Int
-)
