@@ -1,7 +1,7 @@
 fun main() {
     throw NotImplementedError("TODO")
 }
-// Hier dein Application.module Code einfügen
+// Hier deinen Application.module Code einfügen
 
 // 1. Schreibe eine Funktion, die alle Eissorten herausfiltert, die weniger als <value> Euro kosten.
 fun lessThan(value: Double): List<IceCream> {
