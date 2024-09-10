@@ -1,7 +1,7 @@
 plugins {
-    kotlin("jvm") version "1.8.0"
+    kotlin("jvm") version "2.0.20"
     application
-    id("io.ktor.plugin") version "2.3.1"
+    id("io.ktor.plugin") version "3.0.0-beta-2"
 }
 
 group = "org.example"
@@ -12,10 +12,10 @@ repositories {
 }
 
 object Version {
-    const val KTOR = "2.3.1"
+    const val KTOR = "2.3.12"
     const val FUEL = "fuel:3.0.0-alpha1"
-    const val JACKSON = "2.15.0"
-    const val JUNIT = "5.9.2"
+    const val JACKSON = "2.17.2"
+    const val JUNIT = "5.11.0"
 }
 
 dependencies {
@@ -36,7 +36,9 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
 }
 
 application {
